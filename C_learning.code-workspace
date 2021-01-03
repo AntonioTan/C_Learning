@@ -6,6 +6,15 @@
 	],
 	"settings": {
 		"fileheader.Author": "tabbit.tianyitan",
-		"fileheader.LastModifiedBy": "tabbit.tianyitan"
+		"fileheader.LastModifiedBy": "tabbit.tianyitan",
+		"files.associations": {
+			"__locale": "c",
+			"__string": "c",
+			"string": "c",
+			"string_view": "c"
+		},
+		"fileheader.cursorMode": {
+		
+		}
 	}
 }

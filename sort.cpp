@@ -1,8 +1,10 @@
 /*
- * @Author: tabbit.tianyitan 
- * @Date: 2020-12-26 21:20:04 
- * @Last Modified by: tabbit.tianyitan
- * @Last Modified time: 2020-12-30 11:39:09
+ * @Description: 主要是各种排序的实现
+ * @Version: 1.0
+ * @Autor: Tabbit
+ * @Date: 2020-12-26 16:05:09
+ * @LastEditors: Tabbit
+ * @LastEditTime: 2021-01-02 12:22:46
  */
 
 #include <stdio.h>
@@ -10,6 +12,13 @@
 #include <math.h>
 #include <stdlib.h>
 
+typedef struct{
+    int a;
+} hello;
+
+void test(hello &sql) {
+    sql.a = 1;
+}
 void bubble_sort(int arr[], int size)
 {
     /* 关于为什么这里需要传入arr的size 请参考这个链接
@@ -221,5 +230,8 @@ int main(int argv, char *argc[])
     {
         printf("arr %d is: %d\n", i, arr[i]);
     }
+    hello h;
+    test(h);
+    printf("after test: %d", h.a);
     return 0;
 }
