@@ -4,7 +4,7 @@
  * @Autor: Tabbit
  * @Date: 2021-01-03 10:01:18
  * @LastEditors: Tabbit
- * @LastEditTime: 2021-01-08 10:05:54
+ * @LastEditTime: 2021-01-08 11:10:19
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +17,7 @@ typedef struct ChainList
     int data;
     struct ChainList *next;
 } ChainList, *MyChain;
-
+int ttt = 11;
 /**
  * @description: 初始化链表并分配空间 
  * @param {*}
@@ -189,5 +189,8 @@ status main()
         printf("c: %d\n", tmp_c->next->data);
         tmp_c = tmp_c->next;
     }
+    extern int ttt;
+    // ttt = 111;
+    printf("%d\n", ttt);
     return 1;
 }
